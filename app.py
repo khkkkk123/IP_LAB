@@ -21,7 +21,8 @@ def home():
 def test():
     print("Новый тестовый запрос!")
     print("Время:", datetime.now())
-    print("IP:", request.remote_addr)
+    ip = request.headers.get("X-Forwarded-For", request.remote_addr)
+print("IP:", ip)
     print("Браузер:", request.headers.get("User-Agent"))
     return "<h1>Тест завершён!</h1>"
 
