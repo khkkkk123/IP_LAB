@@ -10,7 +10,7 @@ def home():
     <body style="background:#111;color:white;
     font-family:Arial;text-align:center;padding:50px">
         <h1>IP LAB</h1>
-        <h2>Моя первая лаборатория</h2>
+        <h2>my first site</h2>
         <p>Сервер успешно работает!</p>
         <a href="/test" style="color:cyan">Провести тест</a>
     </body>
